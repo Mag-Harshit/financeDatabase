@@ -12,7 +12,6 @@ const Dashboard = () => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        console.log(user);
       } else {
         router.push("/");
       }
@@ -23,11 +22,20 @@ const Dashboard = () => {
 
   return (
     <div>
-      <div className="flex" style={{ height: "100vh", width: "100vh" }}>
+      <div className="h-16 text-center flex items-center justify-center text-5xl font-semibold">
+        {" "}
+        Finance Tracker
+      </div>
+      <hr />
+      <div className="flex">
         <div className="h-full">
           <SideBar />
         </div>
-        <div style={{ marginLeft: "12%" }}>YO</div>
+        <div className="w-full flex justify-center">
+          <div className="mt-10">
+            <div className="text-3xl">DashBoard</div>
+          </div>
+        </div>
       </div>
     </div>
   );

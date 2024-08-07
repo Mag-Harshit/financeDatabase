@@ -17,8 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         {children}
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
       </body>
     </html>
   );
