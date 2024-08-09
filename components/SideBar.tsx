@@ -13,7 +13,7 @@ const SideBar = () => {
       });
   }
   return (
-    <div className="h-full border-blue-900 border-2 sidebar bg-blue-200 flex flex-col justify-between">
+    <div className="h-full sidebar bg-blue-200 shadow-sm flex flex-col justify-between">
       <div className="flex flex-col gap-6">
         <a
           href="/dashboard"

@@ -45,3 +45,7 @@ body {
 .sidebar:hover {
   width: 150px;
 }
+
+.topBar {
+  @apply h-16 text-center shadow-md bg-blue-200 flex items-center justify-center text-4xl sm:text-5xl font-semibold;
+}

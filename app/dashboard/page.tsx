@@ -22,10 +22,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <div className="h-16 text-center flex items-center justify-center text-5xl font-semibold">
-        {" "}
-        Finance Tracker
-      </div>
+      <div className="topBar"> Finance Tracker</div>
       <hr />
       <div className="flex">
         <div className="h-full">
